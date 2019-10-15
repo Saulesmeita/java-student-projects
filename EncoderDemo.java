@@ -15,7 +15,7 @@ public class EncoderDemo {
 
         int work;
 
-        System.out.println("Программа Энкодер преобразует символы Юникода в натуральные числа от 0 до 65535 и наоборот");
+        System.out.println("Программа Энкодер преобразует символы Юникода в натуральные числа от 0 до 65535 и наоборот.");
 
         do {
             System.out.println();
@@ -28,7 +28,7 @@ public class EncoderDemo {
                 character = userInput.next().charAt(0);
                 myEncoder.printSymbol(character);
             }
-            System.out.println("Нажмите 1, чтобы продолжить, и 0, чтобы выйти из программы");
+            System.out.println("Нажмите 1, чтобы продолжить, и 0, чтобы выйти из программы:");
             work = userInput.nextInt();
         } while (work != 0);
 
