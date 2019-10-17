@@ -20,7 +20,7 @@ public class FilisDomesticus {
         this.livesLeft = livesFromStart;
     }
 
-    public void setLazy (boolean lazy) {
+    public void setLazy(boolean lazy) {
         this.lazy = lazy;
     }
 
