@@ -14,10 +14,17 @@ public class Pin {
 
     public boolean checkPin (String somePin) {
         if (this.pin.equals(somePin)) {
+            resetTries();
             return true;
         } else {
             decrementTriesLeft();
             return false;
+        }
+    }
+
+    public void resetTries() {
+        if (this.triesLeft < MAX_TRIES) {
+            this.triesLeft = MAX_TRIES;
         }
     }
 
