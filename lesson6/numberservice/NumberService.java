@@ -5,17 +5,16 @@ public class NumberService {
     public int rangeSum(int start, int finish) {
 
         int sum = 0;
-        int i = start;
         if (start > finish) {
             do {
-                sum += i;
-                i--;
-            } while (i >= finish);
+                sum += start;
+                start--;
+            } while (start >= finish);
         } else {
             do {
-                sum += i;
-                i++;
-            } while (i <= finish);
+                sum += start;
+                start++;
+            } while (start <= finish);
         }
         return sum;
     }
@@ -23,37 +22,35 @@ public class NumberService {
     public int rangeEvenCount(int start, int finish) {
 
         int count = 0;
-        int i = start;
         if (start > finish) {
             do {
-                if (i%2 == 0 && i!=0) count++;
-                i--;
-            } while (i >= finish);
+                if (start % 2 == 0 && start != 0) count++;
+                start--;
+            } while (start >= finish);
         } else {
             do {
-                if (i % 2 == 0 && i != 0) count++;
-                i++;
-            } while (i <= finish);
+                if (start % 2 == 0 && start != 0) count++;
+                start++;
+            } while (start <= finish);
         }
         return count;
     }
     public int rangeEvenCount1(int start, int finish) {
 
         int count = 0;
-        int i = start;
 
         if (start > finish) {
-            if (start%2 != 0) i--;
-                do {
-                    if (i != 0) count++;
-                    i -= 2;
-                } while (i >= finish);
+            if (start % 2 != 0) start--;
+            while (start >= finish) {
+                if (start != 0) count++;
+                start -= 2;
+            }
         } else {
-            if (start%2 != 0) i++;
-            do {
-                if (i != 0) count++;
-                i += 2;
-            } while (i <= finish);
+            if (start % 2 != 0) start++;
+            while (start <= finish) {
+                if (start != 0) count++;
+                start += 2;
+            }
         }
         return count;
     }
