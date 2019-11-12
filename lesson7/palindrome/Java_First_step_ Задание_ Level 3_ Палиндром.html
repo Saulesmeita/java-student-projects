@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ru" xml:lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="https://javaguru.lv/moodle/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="https://javaguru.lv/moodle/theme/e-learning-portal/styles.php" />
+<script type="text/javascript"  src="https://javaguru.lv/moodle/lib/yui/yahoo/yahoo-min.js"></script><script type="text/javascript"  src="https://javaguru.lv/moodle/lib/yui/event/event-min.js"></script><script type="text/javascript"  src="https://javaguru.lv/moodle/lib/yui/connection/connection-min.js"></script><script type="text/javascript"  src="https://javaguru.lv/moodle/lib/swfobject/swfobject.js"></script><script type="text/javascript">
+//<![CDATA[
+  var flashversion = swfobject.getFlashPlayerVersion();
+  YAHOO.util.Connect.asyncRequest('GET','https://javaguru.lv/moodle/login/environment.php?sesskey=FuxJ6a2rYK&flashversion='+flashversion.major+'.'+flashversion.minor+'.'+flashversion.release);
+//]]>
+</script>
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="https://javaguru.lv/moodle/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://javaguru.lv/moodle/theme/standard/styles_ie6.css" />
+<![endif]-->
+
+
+    <meta name="keywords" content="moodle, Java_First_step: Задание: Level 3: Палиндром " />
+    <title>Java_First_step: Задание: Level 3: Палиндром</title>
+    <link rel="shortcut icon" href="https://javaguru.lv/moodle/theme/e-learning-portal/favicon.ico" />
+    <!--<style type="text/css">/*<![CDATA[*/ body{behavior:url(https://javaguru.lv/moodle/lib/csshover.htc);} /*]]>*/</style>-->
+
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/cookies.js"></script>
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/ufo.js"></script>
+<script type="text/javascript" src="https://javaguru.lv/moodle/lib/dropdown.js"></script>  
+
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+setTimeout('fix_column_widths()', 20);
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function openpopup(url, name, options, fullscreen) {
+    var fullurl = "https://javaguru.lv/moodle" + url;
+    var windowobj = window.open(fullurl, name, options);
+    if (!windowobj) {
+        return true;
+    }
+    if (fullscreen) {
+        windowobj.moveTo(0, 0);
+        windowobj.resizeTo(screen.availWidth, screen.availHeight);
+    }
+    windowobj.focus();
+    return false;
+}
+
+function uncheckall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = false;
+    }
+}
+
+function checkall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = true;
+    }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+</head>
+
+<body  class="mod-assignment course-19 dir-ltr lang-ru_utf8" id="mod-assignment-view">
+
+<div id="page">
+
+	<div id="header_bg">
+    <div id="header" class=" clearfix">       <h1 class="headermain">Java 1: Introduction to Java, First step</h1>
+        <div class="headermenu"><div class="navigation">
+<ul><li><form action="https://javaguru.lv/moodle/mod/assignment/view.php"  onclick="this.target='_top';"><fieldset class="invisiblefieldset"><input type="hidden" name="id" value="1523" /><button type="submit" title="Предыдущий элемент курса"><span class="arrow ">&#x25C4;</span><span class="accesshide " >&nbsp;Предыдущий элемент курса</span></button></fieldset></form></li><li><form action="https://javaguru.lv/moodle/course/jumpto.php" method="get"  id="navmenupopup" class="popupform"><div><select id="navmenupopup_jump" name="jump" onchange="self.location=document.getElementById('navmenupopup').jump.options[document.getElementById('navmenupopup').jump.selectedIndex].value;">
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2074" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">[Telegram] https://t.me/joinchat/KZIJwEl_FgOUJzyLJ-4c1w</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1631" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: How to import project</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2048" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">[GitHub] Вторник: https://github.com/konstantins-b...</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2042" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">https://www.w3resource.com</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2040" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">https://leetcode.com/</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2041" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">https://projecteuler.net/</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1634" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Intellij IDEA Google Code Style</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2057" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Head First Java</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2058" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Head First Design Patterns</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2061" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Grokking Algorithms</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2062" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Java 8 in Action</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2063" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Modern Java in Action</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2064" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Effective Java</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2065" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Practical Unit Testing with JUnit and Mockito</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2066" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Clean Code</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2059" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Head First Object-Oriented Analysis and Design</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2060" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Head First Software Development</option>
+   <optgroup label="
+Тема: Знакомство с языком J...">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1491" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 1</option>
+   <option value="https://javaguru.lv/moodle/mod/wiki/view.php?id=1536" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/wiki/icon.gif);">История создания языка программирования Java</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2014" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Скачать и установить JDK</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1482" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Скачать и установить Git</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1483" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Скачать и установить среду разработки IntelliJ IDE...</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1484" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Первое знакомство с алгоритмами (Basic)</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1535" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Учимся и играем: Введение в алгоритмы</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1477" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Проверочная работа: Объекты среди нас</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1478" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Проверочная работа: Алгоритмы</option>
+   </optgroup>   <optgroup label=" Тема: Типы данных, математи...">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1492" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 2</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1539" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Видео: Hello World</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1544" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Видео: Variables</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2012" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Hello World"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2013" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Math Operations"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2019" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Random Demo"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1555" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Статья: Генерация случайных чисел в Java</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2031" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Статья: Наглядное объяснение чисел с плавающей запятой</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1487" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Проверочная работа: Названия переменных</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1577" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Проверочная работа: Тип переменных</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1542" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Арифметические операции</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1541" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Генерация случайных чисел</option>
+   </optgroup>   <optgroup label="">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1558" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 3</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1549" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Видео: Classes and Objects</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2021" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Lamp"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2022" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Book"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2023" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Square"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2024" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Calculator"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=2077" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 1: class Dog</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1603" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 2: class Human</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1560" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Circle</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=2025" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Encoder</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1514" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 3: Product</option>
+   </optgroup>   <optgroup label=" Тема: Условные операторы">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1497" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 4</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1546" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Видео: Условный оператор if</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1499" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Играем и учимся</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2026" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Noise Level Detector"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2027" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Switch Demo"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2028" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Assertions Demo"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1596" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 1: Sign Comparator</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1597" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 2: Phrase Analyser</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1505" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Color Detector</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1510" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Stock</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1513" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 3: UserLoginService</option>
+   </optgroup>   <optgroup label="Тема: объекты в памяти">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1498" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 5</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2029" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Bank Account"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2030" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Book"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1611" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 1: Счетчик</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1653" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Book</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1617" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: TV</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1618" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 3: TV and TVController</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1511" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 4: Credit Card</option>
+   </optgroup>   <optgroup label="Тема: циклы for/while/do...while">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1554" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 6</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1547" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Видео: For Loop</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1501" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Играем и учимся</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2033" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Statistics"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1632" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 1: Таблица нечетных чисел</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1633" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 2: Сумма простых чисел</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1604" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Number Service</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1515" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Car</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1606" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 3: Power Calculator</option>
+   </optgroup>   <optgroup label="Тема: массивы">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1565" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 7</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1548" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Видео: Arrays</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2034" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Arrays Demo"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2035" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Index of Max"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1640" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 1: Работа с массивами</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1609" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Array Service</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1523" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Sort, Swap</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1639" selected="selected" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Перейти на...</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1524" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 4: Копирование диапозона</option>
+   </optgroup>   <optgroup label="">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1572" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 8</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2036" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Forum"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2037" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Payment"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1564" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Animals</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1573" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Shape</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1574" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 3: Math operations</option>
+   </optgroup>   <optgroup label="Тема: коллекции">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1570" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 9</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2068" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Alphabet"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2069" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Menu"</option>
+   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=2070" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Пример: Программа "Words"</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1568" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: Unique word vocabulary</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1569" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Unique Word Counter</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1525" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 3: Библиотека</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1526" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 4:  Shop</option>
+   </optgroup>   <optgroup label=" Тема: исключения">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1655" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 10</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1654" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 1: User Validation Service</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1656" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Level 2: Простая База Данных</option>
+   </optgroup>   <optgroup label="Тема: jUnit">   <option value="https://javaguru.lv/moodle/mod/resource/view.php?id=1660" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/resource/icon.gif);">Презентация: Лекция 11</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1657" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Упражнение 1: UserService and UserRepository Unit ...</option>
+   </optgroup>   <optgroup label="Interview, Feedback">   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1575" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Feedback</option>
+   <option value="https://javaguru.lv/moodle/mod/assignment/view.php?id=1647" style="background-image: url(https://javaguru.lv/moodle/theme/e-learning-portal/pix/mod/assignment/icon.gif);">Final Work</option>
+    </optgroup></select><input type="hidden" name="sesskey" value="FuxJ6a2rYK" /><div id="noscriptnavmenupopup" style="display: inline;"><input type="submit" value="Применить" /></div><script type="text/javascript">
+//<![CDATA[
+document.getElementById("noscriptnavmenupopup").style.display = "none";
+//]]>
+</script></div></form></li><li><form action="https://javaguru.lv/moodle/mod/assignment/view.php"   onclick="this.target='_top';"><fieldset class="invisiblefieldset"><input type="hidden" name="id" value="1524" /><button type="submit" title="Следующий элемент курса"><span class="accesshide " >Следующий элемент курса&nbsp;</span><span class="arrow ">&#x25BA;</span></button></fieldset></form></li></ul>
+</div></div>
+    </div>    </div>
+    <div id="banner_bg"><div id="banner"><h1 class="headermain">JavaGuruLV — Moodle</h1></div></div>
+    <div id="navbar_bg"><div class="navbar clearfix">
+        <div class="breadcrumb"><h2 class="accesshide " >Вы здесь</h2> <ul>
+<li class="first"><a  onclick="this.target='_top'" href="https://javaguru.lv/moodle/">JavaCoursesInRiga</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a  onclick="this.target='_top'" href="https://javaguru.lv/moodle/course/view.php?id=19">Java_First_step</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> <a  onclick="this.target='_top'" href="https://javaguru.lv/moodle/mod/assignment/index.php?id=19">Задания</a></li><li> <span class="accesshide " >/&nbsp;</span><span class="arrow sep">&#x25BA;</span> Level 3: Палиндром</li></ul></div>
+        <div class="navbutton">&nbsp;</div>
+    </div></div>
+    <!-- END OF HEADER -->
+    <div id="content"><div class="groupselector">Отдельные группы: 2019_autumn_Thursday</div><div class="reportlink"></div><div class="clearer"></div><div id="intro" class="box generalbox generalboxcontent boxaligncenter"><p> <iframe height="500" width="1140" src="https://javaguru.lv/moodle/file.php/19/jg-java-1-homeworks/jg-java-1-lesson-7-hw-level-3.html" frameborder="0"></iframe> </p></div><div style="text-align:center"><form enctype="multipart/form-data" method="post" action="https://javaguru.lv/moodle/mod/assignment/upload.php"><fieldset class="invisiblefieldset"><p>Закачать файл (Максимальный размер: 1Мбайт)</p><input type="hidden" name="id" value="1639" /><input type="hidden" name="sesskey" value="FuxJ6a2rYK" /><input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+<input type="file" size="50" name="newfile" alt="newfile" /><br />
+<input type="submit" name="save" value="Отправить" /></fieldset></form></div></div><div id="footer"><p class="helplink"></p><div class="logininfo">Вы зашли под именем <a  href="https://javaguru.lv/moodle/user/view.php?id=6924&amp;course=19">Anna Terehova</a>  (<a  href="https://javaguru.lv/moodle/login/logout.php?sesskey=FuxJ6a2rYK">Выход</a>)</div><div class="homelink"><a  href="https://javaguru.lv/moodle/course/view.php?id=19">Java_First_step</a>&nbsp;<a href="http://www.foxmoodlethemes.com/">website themes</a> <a href="http://www.ntchosting.com/moodle-web-hosting.html">lms web hosting</a></div></div></div>
+</body>
+</html>
