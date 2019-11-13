@@ -21,8 +21,7 @@ public class ArrayService {
         for (int member : array) {
             System.out.print(member + " ");
         }
-        System.out.print("]");
-        System.out.println();
+        System.out.println("]");
     }
 
     public static int sum(int[] array) {
@@ -59,21 +58,13 @@ public class ArrayService {
         for (int i = 0; i < array.length - 1; i++) {
             indexMin = indexOfMin(array, i);
             if (indexMin != i) {
-                exchangeElements(array, i, indexMin);
+                swapElements(array, i, indexMin);
             }
         }
     }
-    public static void exchangeElements(int[] array, int index1, int index2) {
+    public static void swapElements(int[] array, int index1, int index2) {
         int element1 = array[index1];
         int element2 = array[index2];
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == element1) {
-                index1 = i;
-            }
-            if (array[i] == element2) {
-                index2 = i;
-            }
-        }
         array[index2] = element1;
         array[index1] = element2;
     }

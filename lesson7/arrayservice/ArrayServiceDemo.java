@@ -11,7 +11,7 @@ public class ArrayServiceDemo {
         ArrayService.printArrayWithProperties(arr10);
         ArrayService.swap(arr10);
         ArrayService.printArrayWithProperties(arr10);
-        ArrayService.exchangeElements(arr10, 4, 8);
+        ArrayService.swapElements(arr10, 4, 8);
         ArrayService.printArray(arr10);
         ArrayService.sort(arr10);
         ArrayService.printArray(arr10);
