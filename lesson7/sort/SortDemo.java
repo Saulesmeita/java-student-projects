@@ -7,6 +7,6 @@ public class SortDemo {
         BubbleSort.fillRandomly(arr12);
         BubbleSort.printArray(arr12);
         BubbleSort.bubbleSort(arr12);
-        BubbleSort.printArray(arr12);
+     //   BubbleSort.printArray(arr12);
     }
 }

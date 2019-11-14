@@ -16,6 +16,12 @@ public class ArrayServiceDemo {
         ArrayService.sort(arr10);
         ArrayService.printArray(arr10);
 
+        int[] arr20 = ArrayService.create(20);
+        ArrayService.fillRandomly(arr20);
+        ArrayService.printArray(arr20);
+        ArrayService.bubbleSort(arr20);
+        ArrayService.printArray(arr20);
+
         int[] arr0 = ArrayService.create(0);
 
         System.out.println();

@@ -62,6 +62,21 @@ public class ArrayService {
             }
         }
     }
+    public static void bubbleSort(int[] arr) {
+        boolean noChangesMade;
+        for(int i = 0; i < arr.length-1; i++) {
+            noChangesMade = true;
+            for(int j = 1; j < arr.length - i; j++) {
+     //           System.out.println("i = " + i + ", j = " + j);
+                if (arr[j] < arr[j - 1]) {
+                    swapElements(arr, j, j - 1);
+                    noChangesMade = false;
+                }
+     //           printArray(arr);
+            }
+            if (noChangesMade) break;
+        }
+    }
     public static void swapElements(int[] array, int index1, int index2) {
         int element1 = array[index1];
         int element2 = array[index2];
