@@ -100,6 +100,25 @@ public class ClassWork {
         System.out.println(max + "  " + max2);
         System.out.println();
 
+        //Второй способ:
+
+        max = myIntArray2[0];
+        max2 = myIntArray2[1];
+        if (max2 > max) {
+            max2 = max;
+            max = myIntArray2[1];
+        }
+        for (int i = 1; i < myIntArray2.length; i++) {
+            if (myIntArray2[i] > max) {
+                max2 = max;
+                max = myIntArray2[i];
+            } else if (myIntArray2[i] > max2 && myIntArray2[i] < max) {
+                max2 = myIntArray2[i];
+            }
+        }
+        System.out.println(max + "  " + max2);
+        System.out.println();
+
         //Поменять местами минимальный и максимальный элементы массива
 
         int indexOfMax = 0;
@@ -169,10 +188,6 @@ public class ClassWork {
         System.out.println(Arrays.toString(myIntArray));
 
         // Найти все дубликаты в массиве
-
-
-
-
 
     }
 }
