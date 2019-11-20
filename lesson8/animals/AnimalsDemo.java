@@ -33,6 +33,18 @@ public class AnimalsDemo {
         }
 
         System.out.println();
+        System.out.println("Flying creatures:");
+        System.out.println();
+
+        Flyable[] fliers = new Flyable[2];
+        fliers[0] = new Parrot("Red and Yellow");
+        fliers[1] = new Bat();
+
+        for (Flyable flier: fliers) {
+            flier.fly(200, 4);
+        }
+
+        System.out.println();
         System.out.println("Cats and their habits:");
         System.out.println();
 

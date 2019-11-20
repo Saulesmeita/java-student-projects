@@ -2,8 +2,9 @@ package lv.javaguru.lesson8.animals;
 
 public class Bat extends Mammal implements Flyable {
 
-    public Bat(boolean hasOffspring, String sex) {
-        super("Grey", 0.1, 0.05, 0.03, hasOffspring, "Vegetarian", sex, 41);
+    public Bat() {
+        super("Grey", 0.1, 0.05, 0.03, true, "Vegetarian", "Female", 41);
+        this.speciesName = "Bat";
     }
 
     @Override
