@@ -9,4 +9,14 @@ public class AdditionOperation implements MathOperation {
     public double compute(double a, double b) {
         return a + b;
     }
+
+    @Override
+    public String getName() {
+        return NAME;
+    }
+
+    @Override
+    public char getSign() {
+        return SIGN;
+    }
 }
