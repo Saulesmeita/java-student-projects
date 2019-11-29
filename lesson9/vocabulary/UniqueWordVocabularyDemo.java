@@ -6,6 +6,7 @@ public class UniqueWordVocabularyDemo {
 
         UniqueWordVocabulary lexicon = new UniqueWordVocabulary();
 
+        lexicon.addWord("");
         lexicon.addWord("The");
         lexicon.addWord("test");
         lexicon.addWord("of");

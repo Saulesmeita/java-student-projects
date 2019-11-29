@@ -36,6 +36,8 @@ public class UniqueWordVocabularyTest {
         UniqueWordVocabulary victim = new UniqueWordVocabulary();
         checkEquivalence(victim.getWordsCount(),0, "Immediately after creation the set is empty");
         checkEquivalence(victim.vocabularyContents(), "[]", "Immediately after creation the set is empty");
+        victim.addWord("");
+        checkEquivalence(victim.getWordsCount(), 0, "Empty word addition is impossible");
         victim.addWord("word1");
         checkEquivalence(victim.getWordsCount(),1, "Unique word addition");
         checkEquivalence(victim.vocabularyContents(), "[word1]", "Unique word addition");

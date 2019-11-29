@@ -8,7 +8,9 @@ public class UniqueWordVocabulary {
     private Set<String> vocabulary = new HashSet<>();
 
     public void addWord(String word) {
-        vocabulary.add(word);
+        if (word.isEmpty()) {
+            System.out.println("Cannot add an empty word to the vocabulary");
+        } else vocabulary.add(word);
     }
 
     public int getWordsCount() {
